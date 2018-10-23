@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Iordan Ganev, math, mathematics, home page">
+	<meta name="author" content="Iordan Ganev">
+  <title>Iordan Ganev - Finance</title>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="../assets/square.png"/> 
+</head>
+
+<body>
+  <header>
+    <h1><a href="../">Iordan Ganev</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="../">
+           Home
+            </a>
+        </li>
+
+      <li>
+          <a href="../math">
+                Math
+          </a>
+        </li>
+       <li>
+          <a href="../machine_learning">
+                Machine Learning
+          </a>
+        </li>
+      <li>
+        <a href="./" class="active">
+              Finance
+        </a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <p>This page lists notes and personal projects based on my interest in quantitative finance. Comments and questions welcome.
+  </p> <br/>
+
+
+
+  <h2 id="ML">Projects and Notes</h2>
+
+
+  <div class="papers">
+    <content>
+        <p><strong>Stochastic calculus and the Black-Scholes equation</strong>.</p>
+
+          <p>Informal expository notes on stochastic calculus culminating in the Black–Scholes-Merton differential equation. We quickly cover necessary material from probability theory, before discussing Brownian motion, Itô processes, and the Itô-Doeblin formula. The heart of the notes is a derivation of the Black-Scholes-Merton differential equation for contingent derivatives, as well as a derivation of the solution for options. We also mention the greeks, the put-call parity formula, and the relation with the heat equation. Exercises appear at the end.   </p>
+
+</content>
+<p><a href="files/stochastic.pdf">[pdf]</a></p>
+</div>
+
+
+
+ <div class="papers">
+  <content>
+   <p><strong>Black-Scholes Greeks</strong>.</p>
+
+<p>Rust code for computing the greeks of a portfolio based on the Black-Scholes pricing formula. Portfolios of interest consist of options, the underlying, and the risk-neutral asset. The code also produces plots for each of the greeks as the price of the underlying changes.</p> 
+</content>
+<p><a href="https://github.com/ivganev/black-scholes-portfolio">[github]</a></p>
+ </div>
+
+<div class="papers">
+  <content>
+    <p><strong>A comparison of option pricing models</strong>.</p>
+    <p>Python code implementing four option pricing models: (1) the Black-Scholes formula, (2) the quadratic volatility smile model, (3) the hyperbolic volatility smile model, and (4) the binomial model. The code produces comparison plots for the option prices as well as for the resulting risk-neutral probability density functions.</p>
+  </content>
+  <p>
+    <a href="https://github.com/ivganev/option-pricing-models">[github]</a>
+  </p>
+</div>
+
+<div class="papers">
+<content>
+  <p><strong>Binomial options pricing model</strong>.</p>
+
+  <p>Jupyter notebook on the binomial options pricing model, and its relation to the Black-Scholes formula. Specifically, we formulate the model mathematically, implement it with varioud functions, illustrate it with examples, explore the limiting behavior, and compare the model to the Black-Scholes formula.</p>
+</content>
+
+    <p><a href="https://github.com/ivganev/binomial-option-pricing">[github]</a>  <a href="files/Binomial-option-pricing.html">[html]</a></p>
+</div>
+
+
+
+
+
+  <!-- <li><strong>The parable of the bookmaker</strong>. <a href="files/bookmaker.pdf">[pdf]</a></li><br/> -->
+
+
+
+
+
+</body>
+
+</html>

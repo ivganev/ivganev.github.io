@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="Iordan Ganev, math, mathematics, home page">
+	<meta name="author" content="Iordan Ganev">
+  <title>Iordan Ganev - Machine Learning</title>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="../assets/square.png"/> 
+</head>
+
+<body>
+  <header>
+    <h1><a href="../">Iordan Ganev</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="../">
+           Home
+            </a>
+        </li>
+      </li>
+            <li>
+        <a href="../math">
+             Math
+        </a>
+      </li>
+            <li>
+        <a href="./" class="active">
+              Machine Learning
+        </a>
+      </li>
+      <li>
+        <a href="../finance">
+              Finance
+        </a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <p>This page lists publications, preprints, and projects related to my work in machine learning. Comments and questions welcome.
+  </p> <br/>
+
+
+<h2 id="ML">Publications and Preprints</h2>
+
+
+  <div class="papers">
+    <content>
+      <p><strong>Symmetries, flat minima, and the conserved quantities of gradient flow</strong>.<br>
+<i>With B. Zhao, R. Walters, R. Yu, and N. Dehmamy.</i> International Conference on Learning Representations (ICLR), 2023.</p>
+
+    <p><abstract>
+    <abstractTit>Abstract:</abstractTit> We present a general framework for finding continuous symmetries in the parameter space of deep neural networks, which carve out low-loss valleys in the loss landscape. Our framework uses equivariances of the activation functions and can be applied to different layer architectures. We also show that conserved quantities associated with linear symmetries can be used to define coordinates along low-loss valleys. The conserved quantities help reveal that using common initialization methods, gradient flow only explores a small part of the global minimum. By relating conserved quantities to convergence rate and sharpness of the minimum, we provide insights on how initialization impacts convergence and generalizability.</abstract></p>
+
+    </content>
+  <p>
+    <a href="https://arxiv.org/abs/2210.17216">[arXiv]</a>
+    <a href="https://github.com/Rose-STL-Lab/Gradient-Flow-Symmetry">[github]</a>
+  </p>
+</div>
+
+
+  <div class="papers">
+    <content>
+        <p><strong>Quiver neural networks.</strong><br>
+          <i>With R. Walters.</i> Preprint, arXiv:2207.12773.</p>
+
+    <p><abstract>
+    <abstractTit>Abstract:</abstractTit> We develop a uniform theoretical approach towards the analysis of various neural network connectivity architectures by introducing the notion of a quiver neural network. Inspired by quiver representation theory in mathematics, this approach gives a compact way to capture elaborate data flows in complex network architectures. As an application, we use parameter space symmetries to prove a lossless model compression algorithm for quiver neural networks with certain non-pointwise activations known as rescaling activations. In the case of radial rescaling activations, we prove that training the compressed model with gradient descent is equivalent to training the original model with projected gradient descent. </abstract>
+</p>
+</content>
+<p>
+  <a href="https://arxiv.org/abs/2207.12773">[arXiv]</a>
+  <a href="https://github.com/ivganev/quiver-neural-networks">[github]</a>
+</p>
+</div>
+
+
+  <div class="papers">
+    <content>
+        <p><strong>Universal approximation and model compression for radial neural networks.</strong><br> <i>With T. van Laarhoven and R. Walters.</i> Preprint, arXiv:2107.02550. 
+        </p>
+
+<p><abstract>
+    <abstractTit>Abstract:</abstractTit> We introduce a class of fully-connected neural networks whose activation functions, rather than being pointwise, rescale feature vectors by a function depending only on their norm. We call such networks radial neural networks, extending previous work on rotation equivariant networks that considers rescaling activations in less generality. We prove universal approximation theorems for radial neural networks, including in the more difficult cases of bounded widths and unbounded domains. Our proof techniques are novel, distinct from those in the pointwise case. Additionally, radial neural networks exhibit a rich group of orthogonal change-of-basis symmetries on the vector space of trainable parameters. Factoring out these symmetries leads to a practical lossless model compression algorithm. Optimization of the compressed model by gradient descent is equivalent to projected gradient descent for the full model. </abstract></p>
+
+</content>
+<p>
+  <a href="https://arxiv.org/abs/2107.02550">[arXiv]</a>
+  <a href="https://github.com/ivganev/UA-MC-RadNNs-ICLR2023">[github]</a>
+</p>
+</div>
+
+
+
+ <div class="papers">
+ </div>
+
+<br>
+<br>
+<br>
+
+
+<h2 id="ML">Notes and Projects</h2>
+
+
+<div class="papers">
+  <content>
+    <p><strong>Gradient flow and conserved quantities</strong>.</p>
+    <p>These are notes stemming from and supplementing the paper <em>Symmetries, flat minima, and the conserved quantities of gradient flow</em> above (<a href="https://arxiv.org/abs/2210.17216">arXiv:2210.17216</a>). We explain several different characterizations of conserved quantities, provide examples, and explore conserved quantities in the context of a loss function that is invariant under a group action. Of particular interest are orthogonal group actions, which appear in the study of radial neural networks. We provide a description of the stablizer of a generic point in the parameter space of a radial neural network, which is related to the compression of network. We also consider a particular diagonalizable action.</p>
+  </content>
+  <p>    <a href="files/conserved-quantities.pdf">[pdf]</a> </p>
+</div>
+
+
+<div class="papers">
+  <content>
+    <p><strong>Backpropagation</strong>.</p>
+    <p>These notes are an exploration of the backpropagation algorithm for computing the
+      gradient of the loss function for parameters of a neural network. We provide theoretical justification for the algorithm, give several explicit pseudo-code implementations, discuss backpropagation in batches, and include a list of exercises.</p>
+  </content>
+  <p>    <a href="files/Backprop.pdf">[pdf]</a> </p>
+</div>
+
+
+<div class="papers">
+  <content>
+    <p><strong>EM algorithm</strong>.</p>
+    <p>These notes provide an exposition of the expectation-maximization (EM) algorithm for clustering. One can regard this algorithm as an unsupervised learning analogue of Linear Discriminant Analysis. The main reference for these notes is Section 9.2 of the book "Applied Machine Learning" by David Forsyth (<a href="https://link.springer.com/book/10.1007/978-3-030-18114-7">link</a>). We focus on the theoretical justification for the algorithm rather than implementation details.    </p>
+  </content>
+  <p>    <a href="files/em-notes.pdf">[pdf]</a> </p>
+</div>
+
+
+
+
+
+
+
+<div class="papers">
+  <content>
+    <p><strong>Notes on "Graph Neural Networks are Dynamic Programmers"</strong>.</p>
+    <p>These notes delve into the technical aspects of the paper "Graph Neural Networks are Dynamic Programmers" (NeurIPS 2022, <a href="https://arxiv.org/abs/2203.15544">arXiv:2203.15544</a>). We formulate integral transforms using bags and lists.
+      The update step of a dynamic programming algorithm can be interpreted as an integral transform; a prominent example is the Bellman--Ford algorithm. Furthermore, the
+      message-passing step of a graph neural network can also be stated in terms of a certain integral transform.</p>
+  </content>
+  <p>    <a href="files/gnnsdynamic.pdf">[pdf]</a> </p>
+</div>
+
+<div class="papers">
+  <content>
+    <p><strong>Principal Component Analysis</strong>.</p>
+    <p>Principal component analysis is a technique for finding a new ordered basis (or partial basis) of the predictor space in such a way that most of the variability in the data can be captured in fewer dimensions. In these expository notes, we first provide a formulation of principal component analysis from the point of view of finding directions that maximize variability. We then explain the relationship between principal component analysis and the singular value decomposition.</p>
+  </content>
+  <p>
+    <a href="files/PCA.pdf">[pdf]</a>
+  </p>
+</div>
+
+<div class="papers">
+  <content>
+    <p><strong>Geometric Relational Algebra</strong>.</p>
+    <p>These notes illustrate an abstract take on relational algebra inspired by constructions from category theory and algebraic geometry. We define a category for every header whose objects are relations with that header. Relational algebra operations such as union, join, and product are functors between the appropriate categories. We also use pushforwards and pullbacks to give interpretations of aggregate functions, group by, and window functions.</p>
+  </content>
+  <p>
+    <a href="files/Relational-Algebra.pdf">[pdf]</a>
+  </p>
+</div>
+
+<div class="papers">
+  <content>
+    <p><strong>Kaggle</strong>.</p>
+    <p>Minor learning projects for gaining familiarity with PyTorch. One of the projects is a computer vision analysis for distinguishing bees from wasps using a convolutional neural network (<a \href="https://www.kaggle.com/jerzydziewierz/bee-vs-wasp">link</a> to the Kaggle dataset). Another is a NLP sentiment analysis for IMDB movie reviews (<a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">link</a> to the Kaggle dataset).</p>
+  </content>
+  <p>
+    <a href="https://github.com/ivganev/kaggle">[github]</a>
+  </p>
+</div>
+
+
+<div class="papers">
+  <content>
+    <p><strong>Bias-Variance</strong>.</p>
+    <p>An analysis of the bias-variance tradeoff in supervised statistical learning. We examine both the regression and classification settings.</p>
+  </content>
+  <p>
+    <a href="files/bias-variance.pdf">[pdf]</a>
+  </p>
+</div>
+
+
+
+<div class="papers">
+  <content>
+    <p><strong>Principal Component Analysis (alternative take)</strong>.</p>
+    <p>A slightly different perspective on principal component analysis in terms of covariant matrices.</p>
+  </content>
+  <p>
+    <a href="files/PCA2.pdf">[pdf]</a>
+  </p>
+</div>
+
+
+
+
+
+</body>
+
+</html>
