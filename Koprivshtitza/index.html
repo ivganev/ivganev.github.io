@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!--<meta name="keywords" content="Iordan Ganev">-->
+	<meta name="author" content="Iordan Ganev">
+  <title>Iordan Ganev</title>
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Neuton:400,400i,700,700i' rel='stylesheet'>
+  <link rel="icon" href="./Kopr.JPG" />
+</head>
+
+<body>
+
+  <SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "bulgaria") {
+alert('You Got it Right!');
+window.open('https://sites.google.com/view/koprivshtitza/home');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+  <header>
+    <h1><a href="../">Iordan Ganev</a></h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="../">
+           Home
+            </a>
+        </li>
+        <li>
+          <a href="../" class="active">
+            Koprivshtitza
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- <h2 id="research">Research</h2> -->
+
+  <p> Списък на мойте неща в Копривщица. </p>
+
+  <h4 id="фaнелки">Фанелки</h4>
+  <li> Mongolia (с оранжеви букви)</li>
+  <li> Edinburgh (зелена)</li>
+  <li> Miami (синя) </li>
+  <li> Budapest (бяла) </li>
+  <li> Freiheit (бяла, за спане) </li>
+
+<br>
+
+<h4 id="панталони">Панталони</h4>
+<li> Два чифта дънки</li>
+<li> Hiking shorts</li>
+
+<br>
+
+<h4 id="половери">Половери</h4>
+<li> Шарен със цип </li>
+<li> Как си днес? </li>
+
+
+<br>
+
+<h4 id="бельо">Бельо</h4>
+<li> ? чифта чорапи (?? бели, ?? черни) </li>
+<li> ? чифта гащи </li>
+
+
+<br>
+
+<h4 id="други">Други</h4>
+<li> Маратонки за планина </li>
+<li> Чехли </li>
+
+<br>
+
+
+  <div class="papers"></div>
+
+  <h4 id="още">Да донеса:</h4>
+  <li> Чехли </li>
+  <li> Дълги черни чорапи </li>
+
+
+  <br>
+
+  <div class="papers"></div>
+
+  <!---Google Analytics-->
+
+  <p><img src="./Kopr.JPG" alt="Koprivshtitza" id="koprpicture" width="100%" height="100%"/></p>
+
+
+</body>
+
+</html>
